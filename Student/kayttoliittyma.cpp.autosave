@@ -1,0 +1,15 @@
+#include "kayttoliittyma.hh"
+#include "ui_kayttoliittyma.h"
+
+
+kayttoliittyma::kayttoliittyma(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::kayttoliittyma)
+{
+    ui->setupUi(this);
+}
+
+kayttoliittyma::~kayttoliittyma()
+{
+    delete ui;
+}
